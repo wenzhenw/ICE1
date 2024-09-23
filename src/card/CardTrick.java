@@ -27,7 +27,6 @@ public class CardTrick {
         Card lucky = new Card();
         lucky.setValue(6);
         lucky.setSuit("Spades");
-        magicHand[6] = lucky;
         
         int card_in = 0;
         for (int i=0; i<magicHand.length; i++)
