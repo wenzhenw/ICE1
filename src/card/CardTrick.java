@@ -18,13 +18,17 @@ public class CardTrick {
     {
         Card[] magicHand = new Card[7];
         
-        for (int i=0; i<magicHand.length; i++)
+        for (int i=0; i<magicHand.length-1; i++)
         {
             Card c = new Card();
             c.setValue((int)(Math.random()*9)+1);
             c.setSuit(Card.SUITS[(int)(Math.random()*4)]);
             magicHand[i] = c;
         }
+        Card lucky = luckyCard();
+        lucky.setValue(6);
+        lucky.setSuit("Spades");
+        magicHand[6] = lucky;
         
         Scanner input = new Scanner(System.in);
         System.out.print("Enter Card Value: ");
