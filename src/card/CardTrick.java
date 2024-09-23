@@ -25,7 +25,7 @@ public class CardTrick {
             c.setSuit(Card.SUITS[(int)(Math.random()*4)]);
             magicHand[i] = c;
         }
-        Card lucky = luckyCard();
+        Card lucky = new Card();
         lucky.setValue(6);
         lucky.setSuit("Spades");
         magicHand[6] = lucky;
